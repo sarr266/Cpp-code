@@ -1,3 +1,14 @@
+int sum(int* array_beg, int arr_size)
+{
+	int sum = 0;
+	for (int i = 0; i < arr_size; i++)
+	{
+		sum += *array_beg;
+		array_beg += 1;
+	};
+	return sum;
+}
+
 void rev(int* array_beg, int arr_size)
 {
 	int* array_end = (array_beg + arr_size-1);
