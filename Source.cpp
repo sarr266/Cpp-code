@@ -9,6 +9,19 @@ int sum(int* array_beg, int arr_size)
 	return sum;
 }
 
+//another way to implement sum
+int sumarr(int* begarr)
+{
+	int sum = 0;
+	int lenarr = sizeof(*begarr / 4);
+	for (int i = 0; i < lenarr; i++)
+	{
+		sum += *begarr;
+		begarr = begarr + 1;
+	}
+	return sum;
+}
+
 void rev(int* array_beg, int arr_size)
 {
 	int* array_end = (array_beg + arr_size-1);
