@@ -1,4 +1,4 @@
-int sum(int* array_beg, int arr_size)
+int sum(const int* array_beg, int arr_size)
 {
 	int sum = 0;
 	for (int i = 0; i < arr_size; i++)
@@ -10,7 +10,7 @@ int sum(int* array_beg, int arr_size)
 }
 
 //another way to implement sum
-int sumarr(int* begarr)
+int sumarr(const int* begarr)
 {
 	int sum = 0;
 	int lenarr = sizeof(*begarr / 4);
