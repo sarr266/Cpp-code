@@ -40,6 +40,21 @@ void rev(int* array_beg, int arr_size)
 	}
 }
 
+//another way to implement rev
+void rev_arr(int* beg, int size)
+{
+	int* b = beg;
+	int* e = beg + size - 1;
+	while (b < e)
+	{
+		int beg = *b;
+		*b = *e;
+		*e = beg;
+
+		b++;
+		e--;
+	}
+}
 
 int main()
 {
